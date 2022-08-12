@@ -1,0 +1,415 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+/*********************navbar styles **************************/
+
+ul{
+    display: flex;
+    margin-left: 40px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    padding: 30px;
+}
+.header{
+    display: flex;
+    box-shadow: 1px 0px 12px gainsboro;
+    justify-content: space-between;
+    background-color: #fcfcfc;
+    width: 100%;
+    min-height: 80px;
+    position: fixed;
+    z-index: 3000;
+}
+.header ul a{
+text-decoration: none;
+color: rgb(32, 30, 30);
+}
+.header ul a:hover{
+    color:rgb(44, 54, 101) ;
+    text-decoration: underline rgb(44, 54, 101);
+}
+
+.slide-down{
+    display: none;
+}
+
+/********************layer two ******************************/
+.heading-layer{
+    background-repeat: no-repeat;
+  background-image: url("/images/eugunicpic.jpeg");
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
+ 
+}
+center{
+    padding-top: 100px;
+
+}
+.body-header h1{
+    font-size: 60px;
+}
+.body-header span::after{
+    content: ' \002F';
+    font-size: 25px;
+    padding: 6px;
+}
+.body-header p{
+    font-size: 25px;
+}
+
+hr{
+    width: 10%;
+    margin: 10px 0px 10px 0px;
+    border-style: dotted;
+    border-width: 10px 0px 0px;
+
+}
+.letters{
+ margin: 15px 15px;
+  font-size: 20px;
+  /* color: #3F5468; */
+  color: white;
+}
+.btn{
+    border-radius: 10px;
+    padding: 6px;
+    border-color: white;
+    background-color: rgb(44, 54, 101);
+    color: white;
+    width: 100px;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+/* **************************third section******************************************* */
+
+.txt{
+    width: 700px;
+}
+
+/* *****************************Layer three********************* */
+.layer-three{
+    background-color: rgb(44, 54, 101);
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 20px;
+    color: white;
+}
+.img-txt{
+    width: 400px;
+    margin-left: 30px;
+    line-height: 20px;
+}
+.img-txt h2{
+    padding: 20px;
+}
+.txt-nxt{
+padding: 20px;
+
+}
+
+.txt-nxt a{
+    color: white;
+}
+.txt-nxt a:hover{
+    color: yellow;
+}
+/* **********************************layer five************************************* */
+.layer-five{
+    height: 250px;
+    margin-top: 30px;
+    background-color: #F4F4F5;
+
+}
+.btn-chat{
+    width: 120px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.btn-chat a{
+    color: white;
+    text-decoration: none;
+}
+
+.txt-fv{
+    margin-bottom: 30px;
+}
+.btn-chat{
+    background-color: rgb(44, 54, 101);
+     color: white;
+     font-size: 17px;
+}
+.fv{
+  padding: 30px;
+}
+
+/* *********************************************footer ***************************************************/
+.footer{
+    background-color: rgb(44, 54, 101);
+display: flex;
+padding-left: 100px;
+color: white;
+}
+
+.footer ul{
+    display: block;
+
+}
+.footer ul li{
+    padding: 7px;
+}
+
+.footer .one{
+    width: 350px;
+    padding: 10px;
+}
+.whatapp{
+    position: relative;
+}
+
+/*  **********************************************whatsapp************** */
+.img-watsapp{
+    position: fixed;
+    left: 1100px;
+    right: 0;
+    top: 450px;
+    bottom: 0;
+}
+/* ***********************products page**************************** */
+.product-one{
+    display: flex;
+    justify-content: space-around;
+     padding: 30px;
+    
+    
+}
+
+.wir img   {
+    margin-top: 100px;
+    
+
+}
+
+.wire img{
+    margin-top: 100px ;
+} 
+
+.poduct-two{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.ca{
+    margin-left: 14px;
+}
+
+/* *************************************************about us ******************** */
+.hd{
+    color: white;
+    text-align: center;
+}
+.about{
+    background-color:rgb(44, 54, 101) ;
+    height: 160px;
+}
+.first-roll{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-three{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F4F4F5;
+}
+.side-bx{
+    margin-top: 100px;
+    width: 350px;
+}
+
+/* ***************************************************************contact****************** */
+.body-wd{
+
+     padding-top: 100px;
+    text-align: center;
+}
+.pg{
+     
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* ****************************************************************style for the image carousal***************************** */
+
+
+
+
+.myslides-container{
+max-width: 1000px;
+position: relative;
+margin: auto;
+
+}
+
+.myslides{
+    display: none;
+}
+
+.dot{
+    cursor: pointer;
+    background-color: #bbb;
+    color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+/* *******************fade animation********************************* */
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to{opacity: 1;}
+}
+
+@media  screen and (max-width:700px) {
+
+     /* ***********************toggle bar and header part ********************************************************   */
+    
+    ul {
+       display: none;
+    }
+
+    .hamburger div{
+        width: 40px;
+        height: 7px;
+        margin-bottom: 4px;
+        cursor: pointer;
+        background: #444;
+    }
+    .hamburger{
+        display: block;
+        margin: 25px auto auto 20px;
+       position: relative;
+       
+    }
+         
+    .slide-down {
+        padding-top: 40px;
+        position: fixed;
+        background: rgb(44, 54, 101);
+        box-shadow: 1px 0px 14px #999;
+        display: block;
+        height: 60vh;
+        width: 50%;
+        transition: .5s;
+        z-index: 6000;
+        top: -400px;
+       
+    }
+    .slide-down.slide-in{
+        top: 0px;
+        transition: .5s;
+    }
+
+    .slide-down ul{
+        display: block;
+      
+        
+    }
+    .slide-down ul a{
+        color: white;
+    }
+    .slide-down ul a:hover{
+        color: yellow;
+    }
+
+/* **************************third section******************************************* */
+
+.third-section{
+    width: 300px;
+    margin: 0 auto;
+}
+.txt{
+   width: 300px;
+}
+/* ************************************layer three******************************/
+.layer-three{
+    flex-wrap: wrap;
+}
+/* ***************************************footer******************************* */
+.footer{
+    flex-wrap: wrap;
+    /* margin-bottom: 20px; */
+   
+}
+.one{
+   margin: 30px;
+}
+.two{
+    margin: 30px;
+}
+.three{
+    margin: 30px;
+}
+
+/* ***********************************product section**************************** */
+.product-one{
+   flex-flow: column;
+    text-align: center;
+}
+
+.poduct-two{
+    flex-flow: column;
+    text-align: center;
+}
+/* ****************************************about us ******************************* */
+.first-roll{
+    flex-wrap: wrap;
+}
+.row-three{
+    flex-wrap: wrap;
+}
+.side-bx{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* ****************CLOSE BUTTON*************** */
+.button:hover{
+   background-color: rgb(44, 54, 101);
+   color: white;
+   cursor: pointer;
+}
+.img-watsapp{
+    left: 0;
+    height: 70px;
+    
+ 
+}
+
+}
+    
